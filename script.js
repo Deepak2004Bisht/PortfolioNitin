@@ -115,44 +115,27 @@ const videos = [
     title: "Brand Film",
     desc: "Cinematic brand film.",
     duration: "1:24",
-    src: "hori. video/saas.mp4"
-  },
-  {
-    title: "Product Promo",
-    desc: "Product advertisement.",
-    duration: "0:48",
-    src: "hori. video/spotify.mp4"
-  },
-  {
-    title: "Product Promo",
-    desc: "Product advertisement.",
-    duration: "0:48",
-    src: "hori. video/motion.mp4"
+    src: "horizontalVideo/saas.mp4"
   },
   {
     title: "YouTube Edit",
     desc: "Professional YouTube editing.",
     duration: "8:42",
-    src: "hori. video/saas 01.mp4"
+    src: "horizontalVideo/saas 01.mp4"
   },
   {
     title: "Product Promo",
     desc: "Product advertisement.",
     duration: "0:48",
-    src: "hori. video/motion.mp4"
+    src: "horizontalVideo/spotify.mp4"
   },
   {
     title: "Product Promo",
     desc: "Product advertisement.",
     duration: "0:48",
-    src: "hori. video/motion.mp4"
-  },
-  {
-    title: "Product Promo",
-    desc: "Product advertisement.",
-    duration: "0:48",
-    src: "hori. video/motion.mp4"
-  },
+    src: "horizontalVideo/motion.mp4"
+  }
+  
   
 ];
 
