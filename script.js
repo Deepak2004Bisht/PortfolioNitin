@@ -118,12 +118,6 @@ const videos = [
     src: "hori. video/saas.mp4"
   },
   {
-    title: "YouTube Edit",
-    desc: "Professional YouTube editing.",
-    duration: "8:42",
-    src: "hori. video/saas 01.mp4"
-  },
-  {
     title: "Product Promo",
     desc: "Product advertisement.",
     duration: "0:48",
@@ -134,7 +128,32 @@ const videos = [
     desc: "Product advertisement.",
     duration: "0:48",
     src: "hori. video/motion.mp4"
-  }
+  },
+  {
+    title: "YouTube Edit",
+    desc: "Professional YouTube editing.",
+    duration: "8:42",
+    src: "hori. video/saas 01.mp4"
+  },
+  {
+    title: "Product Promo",
+    desc: "Product advertisement.",
+    duration: "0:48",
+    src: "hori. video/motion.mp4"
+  },
+  {
+    title: "Product Promo",
+    desc: "Product advertisement.",
+    duration: "0:48",
+    src: "hori. video/motion.mp4"
+  },
+  {
+    title: "Product Promo",
+    desc: "Product advertisement.",
+    duration: "0:48",
+    src: "hori. video/motion.mp4"
+  },
+  
 ];
 
 const reels = [
@@ -146,32 +165,89 @@ const reels = [
   {
     t: "Logo Speed Reveal",
     dur: "0:24",
-    src: "assets/reels/reel2.mp4"
+    src: "Reels/documntry.mp4"
   },
   {
     t: "Color Theory Tip",
     dur: "0:32",
-    src: "assets/reels/reel3.mp4"
+    src: "Reels/documtry editt.mp4"
   },
   {
     t: "Photoshop in 60s",
     dur: "0:58",
-    src: "assets/reels/reel4.mp4"
+    src: "Reels/swiggy.mp4"
   },
   {
     t: "Premiere Shortcuts",
     dur: "0:42",
-    src: "assets/reels/reel5.mp4"
+    src: "Reels/Comp 1_1_2_1.mp4"
   },
   {
     t: "Brand Mood Reel",
     dur: "0:36",
-    src: "assets/reels/reel6.mp4"
+    src: "Reels/documntry 02.mp4"
   }
 ];
 
-const galleryCats = ['branding','social','logo','poster','thumbnail','banner','flyer','branding','poster','social','logo','thumbnail','banner','flyer','social','branding'];
-const galleryLabels = ['Brand','Social','Logo','Poster','Thumb','Banner','Flyer','Identity','Cover','Story','Mark','Hero','Web','Print','Post','System'];
+const galleryItems = [
+
+  {
+    category: "thumbnail",
+    title: "Brand Identity",
+    image: "thumbnail/ff thumbnail.jpg"
+  },
+
+  {
+    category: "thumbnail",
+    title: "Business Card",
+    image: "thumbnail/gaming thumbnail 01.jpg"
+  },
+  {
+    category: "thumbnail",
+    title: "Business Card",
+    image: "thumbnail/vlog thumbnail 01.jpg"
+  },
+  {
+    category: "thumbnail",
+    title: "Business Card",
+    image: "thumbnail/iman gadzhi thumbnail.jpg"
+  },
+  {
+    category: "thumbnail",
+    title: "Business Card",
+    image: "thumbnail/thumbnail 01.jpg"
+  },
+  {
+    category: "thumbnail",
+    title: "Business Card",
+    image: "thumbnail/car thumbnail.jpg"
+  },
+  {
+    category: "poster",
+    title: "Instagram Post",
+    image: "poster/Artboard 1.jpg"
+  },
+  {
+    category: "poster",
+    title: "Instagram Post",
+    image: "poster/bmw poster.jpg"
+  },
+   {
+    category: "poster",
+    title: "Instagram Post",
+    image: "poster/bmw m4  poster.jpg"
+  },
+  {
+    category: "poster",
+    title: "Instagram Post",
+    image: "poster/burger poster.jpg"
+  },
+  {
+    category: "poster",
+    title: "Instagram Post",
+    image: "poster/social media post.jpg"
+  }
+];
 
 const services = [
   { i: '🎨', t: 'Graphic Design',     d: 'Posters, layouts and print collateral with personality.' },
@@ -191,13 +267,49 @@ const testimonials = [
 ];
 
 const socials = [
-  { n: 'Instagram', a: '@aarav.designs',   k: 'IG' },
-  { n: 'YouTube',   a: '@aaravedits',      k: 'YT' },
-  { n: 'LinkedIn',  a: 'in/aaravsharma',   k: 'IN' },
-  { n: 'Behance',   a: 'be/aaravsharma',   k: 'BE' },
-  { n: 'Dribbble',  a: '@aarav',           k: 'DR' },
-  { n: 'Facebook',  a: '/aarav.designs',   k: 'FB' },
+  {
+    n: "Instagram",
+    a: "nitin.visual",
+    k: "IG",
+    link: "https://www.instagram.com/nitin.visual/"
+  },
+
+  // {
+  //   n: "YouTube",
+  //   a: "@EditXNitin",
+  //   k: "YT",
+  //   link: "https://youtube.com/@EditXNitin"
+  // },
+
+  {
+    n: "LinkedIn",
+    a: "Nitin Bisht",
+    k: "IN",
+    link: "https://www.linkedin.com/in/nitin-bisht-bb3067349/"
+  },
+
+  // {
+  //   n: "Behance",
+  //   a: "Behance",
+  //   k: "BE",
+  //   link: "https://behance.net/YOUR-USERNAME"
+  // },
+
+  // {
+  //   n: "Dribbble",
+  //   a: "@YOURNAME",
+  //   k: "DR",
+  //   link: "https://dribbble.com/YOURNAME"
+  // },
+
+  // {
+  //   n: "Facebook",
+  //   a: "Nitin Visual",
+  //   k: "FB",
+  //   link: "https://facebook.com/YOURPAGE"
+  // }
 ];
+
 
 /* ==========================================================
    Render: Videos
@@ -247,7 +359,7 @@ reels.forEach((r) => {
 
     el.innerHTML = `
 
-        <video class="reel-video" muted loop playsinline preload="metadata">
+        <video class="reel-video" playsinline preload="metadata">
 
             <source src="${r.src}" type="video/mp4">
 
@@ -277,7 +389,7 @@ reels.forEach((r) => {
 
                     <button data-act="share">↗</button>
 
-                    <button data-act="mute">🔇</button>
+                    <button data-act="mute">🔊</button>
 
                     <button data-act="full">⛶</button>
 
@@ -379,42 +491,83 @@ $$('.hscroll-btn').forEach(b => b.addEventListener('click', () => {
 }));
 
 /* Reels auto-slide + pause on hover + drag */
+/* Reels drag only (No auto slide) */
 (() => {
-  const t = reelTrack;
-  let timer, paused = false;
-  const tick = () => {
-    if (paused) return;
-    const max = t.scrollWidth - t.clientWidth;
-    if (t.scrollLeft + 5 >= max) t.scrollTo({ left: 0, behavior: 'smooth' });
-    else t.scrollBy({ left: 280, behavior: 'smooth' });
-  };
-  timer = setInterval(tick, 5000);
-  t.addEventListener('mouseenter', () => paused = true);
-  t.addEventListener('mouseleave', () => paused = false);
 
-  // drag to scroll
-  let down = false, sx = 0, sl = 0;
-  t.addEventListener('mousedown', e => { down = true; sx = e.pageX; sl = t.scrollLeft; t.style.cursor = 'grabbing'; });
-  ['mouseup','mouseleave'].forEach(ev => t.addEventListener(ev, () => { down = false; t.style.cursor = ''; }));
-  t.addEventListener('mousemove', e => { if (!down) return; e.preventDefault(); t.scrollLeft = sl - (e.pageX - sx); });
+  const t = reelTrack;
+
+  let down = false;
+  let startX = 0;
+  let scrollLeft = 0;
+
+  t.addEventListener("mousedown", (e) => {
+    down = true;
+    startX = e.pageX;
+    scrollLeft = t.scrollLeft;
+    t.style.cursor = "grabbing";
+  });
+
+  window.addEventListener("mouseup", () => {
+    down = false;
+    t.style.cursor = "grab";
+  });
+
+  t.addEventListener("mousemove", (e) => {
+    if (!down) return;
+
+    e.preventDefault();
+
+    const walk = e.pageX - startX;
+
+    t.scrollLeft = scrollLeft - walk;
+
+  });
+
 })();
 
 /* ==========================================================
    Render: Gallery + filter + lightbox
    ========================================================== */
-const masonry = $('#masonry');
+const masonry = document.getElementById("masonry");
+
 const tiles = [];
-galleryCats.forEach((cat, i) => {
-  const h = 240 + (i * 53) % 220;
-  const el = document.createElement('div');
-  el.className = 'tile reveal';
-  el.dataset.cat = cat;
-  el.dataset.idx = i;
-  el.innerHTML = `
-    <div class="art" style="background:${svgArt(i, 600, h, galleryLabels[i])};height:${h}px"></div>
-    <div class="ov"><div><span>${cat}</span><h4>${galleryLabels[i]} Project</h4></div></div>`;
-  masonry.appendChild(el);
-  tiles.push(el);
+
+galleryItems.forEach((item,index)=>{
+
+    const el=document.createElement("div");
+
+    el.className="tile reveal";
+
+    el.dataset.cat=item.category;
+
+    el.dataset.idx=index;
+
+    el.innerHTML=`
+
+        <img
+            src="${item.image}"
+            alt="${item.title}"
+            class="gallery-img"
+        >
+
+        <div class="ov">
+
+            <div>
+
+                <span>${item.category}</span>
+
+                <h4>${item.title}</h4>
+
+            </div>
+
+        </div>
+
+    `;
+
+    masonry.appendChild(el);
+
+    tiles.push(el);
+
 });
 
 /* Filter */
@@ -498,12 +651,32 @@ setInterval(() => go((ti + 1) % testimonials.length), 6000);
    Render: Social
    ========================================================== */
 const so = $('#socialGrid');
+
 socials.forEach(s => {
-  const el = document.createElement('a');
-  el.className = 'soc reveal';
-  el.href = '#'; el.target = '_blank'; el.rel = 'noopener';
-  el.innerHTML = `<div class="soc-icon">${s.k}</div><div><div class="name">${s.n}</div><div class="at">${s.a}</div></div><button class="follow">Follow</button>`;
-  so.appendChild(el);
+
+    const el = document.createElement('a');
+
+    el.className = 'soc';
+
+    el.href = s.link;
+
+    el.target = "_blank";
+
+    el.rel = "noopener noreferrer";
+
+    el.innerHTML = `
+        <div class="soc-icon">${s.k}</div>
+
+        <div>
+            <div class="name">${s.n}</div>
+            <div class="at">${s.a}</div>
+        </div>
+
+        <button class="follow">Follow</button>
+    `;
+
+    so.appendChild(el);
+
 });
 
 /* ==========================================================

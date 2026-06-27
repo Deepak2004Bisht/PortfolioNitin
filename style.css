@@ -198,7 +198,7 @@ h1,h2,h3,h4{font-family:'Space Grotesk',sans-serif;font-weight:600;line-height:1
 .hscroll-btn.prev{left:-10px}
 .hscroll-btn.next{right:-10px}
 .hscroll-btn:hover{background:var(--grad);border-color:transparent;box-shadow:var(--glow)}
-@media (max-width:768px){.hscroll-btn{display:none}}
+@media (max-width:768px){.hscroll-btn{font-size:18px; width:30px; height:30px;}}
 
 /* Video card */
 .vcard{flex:0 0 420px;max-width:80vw;scroll-snap-align:start;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-lg);overflow:hidden;backdrop-filter:blur(20px);transition:.4s var(--ease);position:relative}
@@ -295,7 +295,7 @@ h1,h2,h3,h4{font-family:'Space Grotesk',sans-serif;font-weight:600;line-height:1
 .tdot.active{width:24px;border-radius:999px;background:var(--grad)}
 
 /* ============ Social ============ */
-.social-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+.social-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:22px}
 .soc{padding:24px;border-radius:var(--radius-lg);background:var(--surface);border:1px solid var(--border);display:flex;align-items:center;gap:14px;transition:.4s var(--ease);position:relative;overflow:hidden}
 .soc::before{content:"";position:absolute;inset:0;background:var(--grad-soft);opacity:0;transition:.4s}
 .soc:hover{transform:translateY(-4px);border-color:transparent;box-shadow:var(--glow)}
