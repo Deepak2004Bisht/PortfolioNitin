@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Premium portfolio of a creative graphic designer & video editor — branding, motion, social media, and more." />
+<title>Nitin Bisht — Graphic Designer & Video Editor</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- Loading screen -->
+<div class="loader" id="loader">
+  <div class="loader-inner">
+    <div class="loader-ring"></div>
+    <div class="loader-text">Nitin<span>.</span></div>
+  </div>
+</div>
+
+<!-- Custom cursor -->
+<div class="cursor" id="cursor"></div>
+<div class="cursor-dot" id="cursorDot"></div>
+
+<!-- Scroll progress -->
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<!-- Navbar -->
+<header class="navbar" id="navbar">
+  <a href="#home" class="logo">Nitin<span>.</span></a>
+  <nav class="nav-links" id="navLinks">
+    <a href="#home" class="nav-link active">Home</a>
+    <a href="#about" class="nav-link">About</a>
+    <a href="#videos" class="nav-link">Videos</a>
+    <a href="#reels" class="nav-link">Reels</a>
+    <a href="#gallery" class="nav-link">Gallery</a>
+    <a href="#services" class="nav-link">Services</a>
+    <a href="#contact" class="nav-link">Contact</a>
+  </nav>
+  <button class="hamburger" id="hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<!-- Hero -->
+<section class="hero" id="home">
+  <div class="bg-anim">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+    <div class="particles" id="particles"></div>
+  </div>
+  <div class="hero-grid container">
+    <div class="hero-left reveal">
+      <span class="tag"><span class="dot"></span> Available for new projects</span>
+      <h1 class="hero-title">
+        Creative <span class="gradient-text">Graphic Designer</span><br/>
+        &amp; <span class="gradient-text">Video Editor</span>
+      </h1>
+      <p class="hero-sub">
+        I craft bold visual identities and cinematic edits that help brands cut through the noise. From posters and logos to reels and motion graphics — pixel-perfect, on-brand, on time.
+      </p>
+      <div class="hero-cta">
+        <a href="#gallery" class="btn btn-primary"><span>View Portfolio</span></a>
+        <a href="#contact" class="btn btn-ghost"><span>Contact Me</span></a>
+      </div>
+      <div class="hero-stats">
+        <div><strong data-count="120">0</strong><span>Projects</span></div>
+        <div><strong data-count="60">0</strong><span>Clients</span></div>
+        <div><strong data-count="4">0</strong><span>Years</span></div>
+      </div>
+    </div>
+    <div class="hero-right reveal" data-parallax>
+      <div class="avatar-frame">
+        <div class="avatar-glow"></div>
+        <div class="avatar" aria-label="Designer portrait">
+          <img src="images/dp.jpg" alt="">
+            <defs>
+              <linearGradient id="g1" x1="0" x2="1" y1="0" y2="1">
+                <stop offset="0%" stop-color="#8b5cf6"/>
+                <stop offset="100%" stop-color="#3b82f6"/>
+              </linearGradient>
+            </defs>
+            <circle cx="100" cy="100" r="95" fill="url(#g1)" opacity=".15"/>
+            <circle cx="100" cy="80" r="34" fill="url(#g1)"/>
+            <path d="M30 180c10-38 40-58 70-58s60 20 70 58" fill="url(#g1)"/>
+          </svg>
+        </div>
+        <div class="float-icon float-1">🎨</div>
+        <div class="float-icon float-2">🎬</div>
+        <div class="float-icon float-3">✨</div>
+        <div class="float-icon float-4">📸</div>
+      </div>
+    </div>
+  </div>
+  <a href="#about" class="scroll-cue" aria-label="Scroll down">
+    <span></span>
+  </a>
+</section>
+
+<!-- About -->
+<section class="section" id="about">
+  <div class="container about-grid">
+    <div class="about-photo reveal">
+      <div class="photo-frame">
+        <img src="images/dp.jpg" alt="Nitin Bisht">
+          <defs>
+            <linearGradient id="g2" x1="0" x2="1" y1="0" y2="1">
+              <stop offset="0%" stop-color="#8b5cf6"/><stop offset="100%" stop-color="#3b82f6"/>
+            </linearGradient>
+          </defs>
+          <rect width="300" height="380" rx="24" fill="url(#g2)" opacity=".18"/>
+          <circle cx="150" cy="140" r="60" fill="url(#g2)"/>
+          <path d="M40 360c20-70 70-110 110-110s90 40 110 110" fill="url(#g2)"/>
+        </svg>
+      </div>
+    </div>
+    <div class="about-text reveal">
+      <span class="section-tag">About Me</span>
+      <h2 class="section-title">Designing stories. <span class="gradient-text">Editing emotions.</span></h2>
+      <p>I'm a multidisciplinary creative blending graphic design with video editing. I help startups, creators, and brands ship beautiful work — from punchy thumbnails to full brand systems and motion-led reels.</p>
+
+      <div class="timeline">
+        <div class="t-item"><span class="t-dot"></span><div><h4>Diploma in Design(MAAC)</h4><p>2024 — 2026</p></div></div>
+        <!-- <div class="t-item"><span class="t-dot"></span><div><h4>Graphic Design</h4><p>Photoshop, Illustrator, Figma, Canva</p></div></div>
+        <div class="t-item"><span class="t-dot"></span><div><h4>Video Editing</h4><p>Premiere Pro, After Effects</p></div></div> -->
+      </div>
+
+      <div class="skills">
+        <div class="skill-card reveal">🎨<span>Graphic Design</span></div>
+        <div class="skill-card reveal">🎬<span>Motion Design</span></div>
+        <div class="skill-card reveal">🖌️<span>Photoshop</span></div>
+        <div class="skill-card reveal">✏️<span>Illustrator</span></div>
+        <div class="skill-card reveal">🎞️<span>Premiere Pro</span></div>
+        <div class="skill-card reveal">💫<span>After Effects</span></div>
+        <div class="skill-card reveal">🅒<span>Canva</span></div>
+        <div class="skill-card reveal">🅕<span>Figma</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Featured Videos -->
+<section class="section" id="videos">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="section-tag">Featured Work</span>
+      <h2 class="section-title">Video <span class="gradient-text">Showcase</span></h2>
+      <p class="section-sub">Selected edits — branded films, motion graphics, and YouTube cuts.</p>
+    </div>
+
+    <div class="hscroll-wrap">
+      <button class="hscroll-btn prev" data-target="videoTrack" aria-label="Previous">‹</button>
+      <div class="hscroll" id="videoTrack">
+        <!-- video cards injected by JS -->
+      </div>
+      <button class="hscroll-btn next" data-target="videoTrack" aria-label="Next">›</button>
+    </div>
+  </div>
+</section>
+
+<!-- Instagram Reels -->
+<section class="section" id="reels">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="section-tag">Instagram</span>
+      <h2 class="section-title">Reels <span class="gradient-text">Showcase</span></h2>
+      <p class="section-sub">Short-form vertical content built to stop the scroll.</p>
+    </div>
+
+    <div class="hscroll-wrap reels-wrap">
+      <button class="hscroll-btn prev" data-target="reelTrack" aria-label="Previous">‹</button>
+      <div class="hscroll reels" id="reelTrack"></div>
+      <button class="hscroll-btn next" data-target="reelTrack" aria-label="Next">›</button>
+    </div>
+  </div>
+</section>
+
+<!-- Gallery -->
+<section class="section" id="gallery">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="section-tag">Gallery</span>
+      <h2 class="section-title">Photo &amp; <span class="gradient-text">Design Gallery</span></h2>
+      <p class="section-sub">Filter by category — click any tile to open the lightbox.</p>
+    </div>
+
+    <div class="filters reveal" id="filters">
+      <button class="filter active" data-filter="all">All</button>
+      <button class="filter" data-filter="branding">Branding</button>
+      <button class="filter" data-filter="social">Social Media</button>
+      <button class="filter" data-filter="logo">Logo</button>
+      <button class="filter" data-filter="poster">Poster</button>
+      <button class="filter" data-filter="thumbnail">Thumbnail</button>
+      <button class="filter" data-filter="banner">Banner</button>
+      <button class="filter" data-filter="flyer">Flyer</button>
+    </div>
+
+    <div class="masonry" id="masonry"></div>
+  </div>
+</section>
+
+<!-- Services -->
+<section class="section" id="services">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="section-tag">Services</span>
+      <h2 class="section-title">What I <span class="gradient-text">Do Best</span></h2>
+    </div>
+    <div class="services-grid" id="servicesGrid"></div>
+  </div>
+</section>
+
+<!-- Why choose me -->
+<section class="section" id="why">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="section-tag">Why Me</span>
+      <h2 class="section-title">Built for <span class="gradient-text">Brands That Care</span></h2>
+    </div>
+    <div class="why-grid">
+      <div class="why-card reveal"><div class="why-icon">💡</div><h3>Creative Ideas</h3><p>Concepts that feel fresh, on-brand and scroll-stopping.</p></div>
+      <div class="why-card reveal"><div class="why-icon">⚡</div><h3>Fast Delivery</h3><p>Quick turnarounds without compromising craft.</p></div>
+      <div class="why-card reveal"><div class="why-icon">🏆</div><h3>Professional Quality</h3><p>Pixel-perfect, export-ready, broadcast quality.</p></div>
+      <div class="why-card reveal"><div class="why-icon">🔁</div><h3>Unlimited Revisions</h3><p>We iterate until it feels right. No upcharges.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials -->
+<section class="section" id="testimonials">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="section-tag">Testimonials</span>
+      <h2 class="section-title">Kind Words from <span class="gradient-text">Clients</span></h2>
+    </div>
+    <div class="testi-slider">
+      <div class="testi-track" id="testiTrack"></div>
+      <div class="testi-dots" id="testiDots"></div>
+    </div>
+  </div>
+</section>
+
+<!-- Social -->
+<section class="section" id="social">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="section-tag">Follow</span>
+      <h2 class="section-title">Find Me <span class="gradient-text">Online</span></h2>
+    </div>
+    <div class="social-grid" id="socialGrid"></div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section class="section" id="contact">
+  <div class="container contact-grid">
+    <div class="contact-info reveal">
+      <span class="section-tag">Contact</span>
+      <h2 class="section-title">Let's Build <span class="gradient-text">Something Great</span></h2>
+      <ul class="info-list">
+        <li><span>📍</span><div><h4>Location</h4><p>New Delhi, India</p></div></li>
+        <li><span>✉️</span><div><h4>Email</h4><p>hello@Nitin.design</p></div></li>
+        <li><span>📞</span><div><h4>Phone</h4><p>+91 98765 43210</p></div></li>
+        <li><span>🕒</span><div><h4>Working Hours</h4><p>Mon — Sat · 10:00 — 19:00</p></div></li>
+      </ul>
+      <div class="map-placeholder" aria-label="Map">
+        <div class="map-grid"></div>
+        <div class="map-pin">📍</div>
+      </div>
+    </div>
+    <form class="contact-form reveal" id="contactForm" novalidate>
+      <div class="row">
+        <div class="field"><label>Name</label><input type="text" name="name" required /></div>
+        <div class="field"><label>Email</label><input type="email" name="email" required /></div>
+      </div>
+      <div class="row">
+        <div class="field"><label>Phone</label><input type="tel" name="phone" /></div>
+        <div class="field"><label>Subject</label><input type="text" name="subject" required /></div>
+      </div>
+      <div class="field"><label>Message</label><textarea name="message" rows="6" required></textarea></div>
+      <button type="submit" class="btn btn-primary" id="submitBtn"><span>Send Message</span></button>
+      <p class="form-msg" id="formMsg"></p>
+    </form>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <a href="#home" class="logo">Nitin<span>.</span></a>
+      <p class="muted">Designing brands and editing stories that move people.</p>
+    </div>
+    <div>
+      <h4>Quick Links</h4>
+      <a href="#about">About</a><a href="#videos">Videos</a><a href="#gallery">Gallery</a><a href="#contact">Contact</a>
+    </div>
+    <div>
+      <h4>Services</h4>
+      <a href="#services">Graphic Design</a><a href="#services">Video Editing</a><a href="#services">Branding</a><a href="#services">Motion</a>
+    </div>
+    <div>
+      <h4>Social</h4>
+      <div class="footer-social">
+        <a href="#" aria-label="Instagram">IG</a>
+        <a href="#" aria-label="YouTube">YT</a>
+        <a href="#" aria-label="LinkedIn">IN</a>
+        <a href="#" aria-label="Behance">BE</a>
+      </div>
+    </div>
+  </div>
+  <div class="container copy">© <span id="year"></span> Nitin Bisht. All rights reserved.</div>
+</footer>
+
+<!-- Back to top -->
+<button class="to-top" id="toTop" aria-label="Back to top">↑</button>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox" aria-hidden="true">
+  <button class="lb-close" id="lbClose" aria-label="Close">×</button>
+  <button class="lb-nav prev" id="lbPrev" aria-label="Previous">‹</button>
+  <div class="lb-stage" id="lbStage"></div>
+  <button class="lb-nav next" id="lbNext" aria-label="Next">›</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
