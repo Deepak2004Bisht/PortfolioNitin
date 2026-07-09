@@ -148,7 +148,7 @@ const reels = [
   {
     t: "Logo Speed Reveal",
     dur: "0:24",
-    src: "Reels/documntry.mp4"
+    src: "Reels/documentry.mp4"
   },
   {
     t: "Color Theory Tip",
@@ -169,6 +169,11 @@ const reels = [
     t: "Brand Mood Reel",
     dur: "0:36",
     src: "Reels/documntry 02.mp4"
+  },
+  {
+    t: "Brand Mood Reel",
+    dur: "0:36",
+    src: "Reels/real state.mp4"
   }
 ];
 
@@ -208,11 +213,6 @@ const galleryItems = [
   {
     category: "poster",
     title: "Instagram Post",
-    image: "poster/Artboard 1.jpg"
-  },
-  {
-    category: "poster",
-    title: "Instagram Post",
     image: "poster/bmw poster.jpg"
   },
    {
@@ -229,7 +229,47 @@ const galleryItems = [
     category: "poster",
     title: "Instagram Post",
     image: "poster/social media post.jpg"
-  }
+  },
+  {
+    category: "social",
+    title: "Social Media Post",
+    image: "socialMedia/gym social media post.jpg"
+  },
+  {
+    category: "social",
+    title: "Social Media Post",
+    image: "socialMedia/gym.jpg"
+  },
+  {
+    category: "social",
+    title: "Social Media Post",
+    image: "socialMedia/Artboard 1.jpg"
+  },
+  {
+    category: "carousel",
+    title: "Carousel Post",
+    image: "carousel/gym-caouresel_01.jpg"
+  },
+  {
+    category: "carousel",
+    title: "Carousel Post",
+    image: "carousel/gym-caouresel_02.jpg"
+  },
+  {
+    category: "carousel",
+    title: "Carousel Post",
+    image: "carousel/gym-caouresel_03.jpg"
+  },
+  {
+    category: "carousel",
+    title: "Carousel Post",
+    image: "carousel/gym-caouresel_04.jpg"
+  },
+  {
+    category: "carousel",
+    title: "Carousel Post",
+    image: "carousel/gym-caouresel_05.jpg"
+  },
 ];
 
 const services = [
