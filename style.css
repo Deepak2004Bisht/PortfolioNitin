@@ -363,3 +363,9 @@ h1,h2,h3,h4{font-family:'Space Grotesk',sans-serif;font-weight:600;line-height:1
 .lb-close{top:24px;right:24px}
 .lb-nav.prev{left:24px;top:50%;transform:translateY(-50%)}
 .lb-nav.next{right:24px;top:50%;transform:translateY(-50%)}
+
+
+
+.spanSize{
+  font-size: 60px;
+}
