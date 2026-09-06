@@ -111,30 +111,42 @@ const svgArt = (i, w = 600, h = 400, label = '') => {
 };
 
 const videos = [
-   {
-    title: "Brand Film",
-    desc: "Cinematic brand film.",
-    duration: "1:24",
+  {
+    title: "Stripe",
+    desc: "Motion Graphic",
+    // duration: "1:24",
+    src: "horizontalVideo/stripe.mp4"
+  },
+  {
+    title: "Creative AI",
+    desc: "Motion Graphic",
+    // duration: "1:24",
+    src: "horizontalVideo/sotm.mp4"
+  },
+  {
+    title: "Gemini",
+    desc: "Motion Graphic",
+    // duration: "1:24",
     src: "horizontalVideo/saas.mp4"
   },
   {
-    title: "YouTube Edit",
-    desc: "Professional YouTube editing.",
-    duration: "8:42",
+    title: "Adobe",
+    desc: "Motion Graphic",
+    // duration: "8:42",
     src: "horizontalVideo/saas 01.mp4"
   },
   {
-    title: "Product Promo",
-    desc: "Product advertisement.",
-    duration: "0:48",
+    title: "Spotify",
+    desc: "Motion Graphic",
+    // duration: "0:48",
     src: "horizontalVideo/spotify.mp4"
   },
-  {
-    title: "Product Promo",
-    desc: "Product advertisement.",
-    duration: "0:48",
-    src: "horizontalVideo/motion.mp4"
-  }
+  // {
+  //   title: "Product Promo",
+  //   desc: "Product advertisement.",
+  //   duration: "0:48",
+  //   src: "horizontalVideo/motion.mp4"
+  // }
   
   
 ];
@@ -160,15 +172,15 @@ const reels = [
     dur: "0:58",
     src: "Reels/swiggy.mp4"
   },
+   {
+    t: "Behind the Design",
+    dur: "0:18",
+    src: "Reels/Noodles PSD.mp4"
+  },
   {
     t: "Premiere Shortcuts",
     dur: "0:42",
     src: "Reels/Comp 1_1_2_1.mp4"
-  },
-  {
-    t: "Brand Mood Reel",
-    dur: "0:36",
-    src: "Reels/documntry 02.mp4"
   },
   {
     t: "Brand Mood Reel",
@@ -356,12 +368,6 @@ videos.forEach(video => {
         <div class="vinfo">
             <h3>${video.title}</h3>
             <p>${video.desc}</p>
-
-            <div class="vmeta">
-                <span>Featured</span>
-                <span>${video.duration}</span>
-            </div>
-
         </div>
     `;
 
@@ -395,16 +401,11 @@ reels.forEach((r) => {
         <div class="reel-overlay">
 
             <div class="top-row">
-
-                <span>@aarav.designs</span>
-
-                <span class="dur">${r.dur}</span>
-
             </div>
 
             <div class="bot-row">
 
-                <div class="reel-title">${r.t}</div>
+                <div class="reel-title"></div>
 
                 <div class="actions">
 
@@ -730,3 +731,100 @@ form.addEventListener('submit', e => {
 
 /* ---------- Observe everything once it's in the DOM ---------- */
 observeReveals();
+
+// Motion Graphics Video
+document.addEventListener("DOMContentLoaded", function () {
+
+  const videoCards = document.querySelectorAll(".video-card");
+
+  videoCards.forEach(function (card) {
+
+    const video = card.querySelector("video");
+    const button = card.querySelector(".video-play-btn");
+    const box = card.querySelector(".video-box");
+
+    if (!video || !button) return;
+
+
+    // PLAY / PAUSE BUTTON
+    button.addEventListener("click", function (e) {
+
+      e.stopPropagation();
+
+      // Pause other videos
+      videoCards.forEach(function (otherCard) {
+
+        const otherVideo = otherCard.querySelector("video");
+        const otherBox = otherCard.querySelector(".video-box");
+        const otherButton = otherCard.querySelector(".video-play-btn");
+
+        if (otherVideo !== video) {
+
+          otherVideo.pause();
+
+          otherBox.classList.remove("playing");
+
+          otherButton.textContent = "▶";
+        }
+
+      });
+
+
+      // Current video
+      if (video.paused) {
+
+        video.play();
+
+        box.classList.add("playing");
+
+        button.textContent = "❚❚";
+
+      } else {
+
+        video.pause();
+
+        box.classList.remove("playing");
+
+        button.textContent = "▶";
+
+      }
+
+    });
+
+
+    // CLICK VIDEO = PLAY / PAUSE
+    video.addEventListener("click", function () {
+
+      if (video.paused) {
+
+        video.play();
+
+        box.classList.add("playing");
+
+        button.textContent = "❚❚";
+
+      } else {
+
+        video.pause();
+
+        box.classList.remove("playing");
+
+        button.textContent = "▶";
+
+      }
+
+    });
+
+
+    // WHEN VIDEO FINISHES
+    video.addEventListener("ended", function () {
+
+      box.classList.remove("playing");
+
+      button.textContent = "▶";
+
+    });
+
+  });
+
+});
