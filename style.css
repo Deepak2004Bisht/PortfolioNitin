@@ -677,7 +677,7 @@ h1,h2,h3,h4{font-family:'Space Grotesk',sans-serif;font-weight:600;line-height:1
    EXPERIENCE TIMELINE
 ========================= */
 
-.timeline {
+.timelines {
   position: relative;
   width: 760px;
   max-width: 100%;
@@ -687,7 +687,7 @@ h1,h2,h3,h4{font-family:'Space Grotesk',sans-serif;font-weight:600;line-height:1
 }
 
 /* CENTER LINE */
-.timeline::before {
+.timelines::before {
   content: "";
   position: absolute;
   top: 10px;
@@ -724,7 +724,7 @@ h1,h2,h3,h4{font-family:'Space Grotesk',sans-serif;font-weight:600;line-height:1
 .tl-dot {
   position: absolute;
   top: 10px;
-  left: 48.7%;
+  left: 50%;
   width: 15px;
   height: 15px;
   border-radius: 50%;
@@ -843,13 +843,13 @@ h1,h2,h3,h4{font-family:'Space Grotesk',sans-serif;font-weight:600;line-height:1
 
 @media (max-width: 800px) {
 
-  .timeline {
+  .timelines {
     width: 100%;
     padding-left: 25px;
   }
 
   /* Move line to left */
-  .timeline::before {
+  .timelines::before {
     left: 10px;
     transform: none;
   }
@@ -880,11 +880,11 @@ h1,h2,h3,h4{font-family:'Space Grotesk',sans-serif;font-weight:600;line-height:1
 
 @media (max-width: 500px) {
 
-  .timeline {
+  .timelines {
     padding-left: 20px;
   }
 
-  .timeline::before {
+  .timelines::before {
     left: 8px;
   }
 
