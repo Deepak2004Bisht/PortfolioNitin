@@ -168,6 +168,11 @@ const reels = [
     src: "Reels/documtry editt.mp4"
   },
   {
+    t: "Color Theory Tip",
+    dur: "0:32",
+    src: "Reels/before_after.mp4"
+  },
+  {
     t: "Photoshop in 60s",
     dur: "0:58",
     src: "Reels/swiggy.mp4"
