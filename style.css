@@ -436,10 +436,12 @@ h1,h2,h3,h4{font-family:'Space Grotesk',sans-serif;font-weight:600;line-height:1
 ========================= */
 
 .video-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  /* display: grid;
+  grid-template-columns: repeat(2, 1fr); */
+  display: flex;
   gap: 25px;
   margin-top: 40px;
+  flex-wrap: unset;
 }
 
 
@@ -517,6 +519,12 @@ h1,h2,h3,h4{font-family:'Space Grotesk',sans-serif;font-weight:600;line-height:1
 
 .video-card:hover video {
   transform: scale(1.04);
+}
+
+@media (max-width:800px){
+  .video-grid{
+    flex-wrap: wrap;
+  }
 }
 
 
